@@ -1,0 +1,7 @@
+# dist folders
+/dev-dist
+/dist
+
+# vendor files
+/node_modules
+/vendor

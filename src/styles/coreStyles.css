@@ -1,0 +1,19 @@
+@font-face {
+    font-family: "Roboto-Black";
+    src: url('~roboto-fontface/css/roboto/roboto-fontface.css');
+}
+.flex-container{
+    display: flex;
+}
+
+.flex-center{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.app-root{
+    position:fixed;
+    height: 100%;
+    width: 100%;
+}
