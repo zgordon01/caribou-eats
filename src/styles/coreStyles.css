@@ -12,6 +12,22 @@
     justify-content: center;
 }
 
+.flex-space-horizontal{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.vertical-space-large {
+    margin-top: 5em;
+    margin-bottom: 5em
+}
+
+.vertical-space-small {
+    margin-top: 1em;
+    margin-bottom: 1em
+}
+
 .app-root{
     position:fixed;
     height: 100%;

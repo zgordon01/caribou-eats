@@ -1,0 +1,14 @@
+.roller-tile {
+    width: 300px;
+}
+
+.roller-tile-dice {
+    cursor: pointer;
+    font-size: 5em;
+}
+
+.roller-tile-flex-space {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

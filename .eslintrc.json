@@ -4,6 +4,7 @@
         "es6": true
     },
     "extends": "standard",
+
     "globals": {
         "Atomics": "readonly",
         "SharedArrayBuffer": "readonly",
@@ -17,7 +18,8 @@
         "sourceType": "module"
     },
     "plugins": [
-        "react"
+        "react",
+        "json"
     ],
     "rules": {
         "semi": [2, "always"],

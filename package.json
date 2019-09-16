@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@material-ui/core": "^3.9.2",
+    "@material-ui/icons": "^4.4.1",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
     "roboto-fontface": "^0.10.0"
@@ -13,7 +14,7 @@
     "buildDev": "node devScripts/cleanDevDist.js && webpack --config webpack.dev.config.js",
     "buildProd": "node devScripts/cleanDist.js && webpack --config webpack.prod.js",
     "stats": "webpack --json > stats.json --config webpack.prod.js",
-    "lint": "eslint . --cache --fix"
+    "lint": "eslint . --cache --fix --ext .js --ext .json"
   },
   "browserslist": [
     ">0.2%",
@@ -31,6 +32,7 @@
     "eslint": "^5.15.2",
     "eslint-config-standard": "^12.0.0",
     "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-json": "^1.4.0",
     "eslint-plugin-node": "^8.0.1",
     "eslint-plugin-promise": "^4.0.1",
     "eslint-plugin-react": "^7.12.4",
