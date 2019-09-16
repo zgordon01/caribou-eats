@@ -3,7 +3,7 @@ name: Build and Deploy
 on:
   push:
     branches:
-    - master
+    - firebase-testing
 
 jobs:
   build:
@@ -25,10 +25,11 @@ jobs:
         yarn install
         yarn buildProd
         ls -la
-    - name: Deploy to GH Pages
-      uses: maxheld83/ghpages@v0.2.1
-      env: 
-        BUILD_DIR: dist/
-      secrets: [GH_PAT]
+    - name: deploy
+      uses: w9jds/firebase-action@v1.0.1
+      if: success()
+      with:
+        args: deploy --only hosting
       env:
-        CI: true
+        FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
+
