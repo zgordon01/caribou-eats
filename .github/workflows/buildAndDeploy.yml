@@ -3,7 +3,7 @@ name: Build and Deploy
 on:
   push:
     branches:
-    - firebase-testing
+    - master
 
 jobs:
   build:
@@ -20,12 +20,12 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - name: install and build
+    - name: Build the app
       run: |
         yarn install
         yarn buildProd
         ls -la
-    - name: deploy
+    - name: Deploy to Firebase
       uses: w9jds/firebase-action@v1.0.1
       if: success()
       with:
