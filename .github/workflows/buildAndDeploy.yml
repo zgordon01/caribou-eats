@@ -31,6 +31,5 @@ jobs:
         env: 
           BUILD_DIR: "dist/"
         secrets: ["GH_PAT"]
-        }
       env:
         CI: true
